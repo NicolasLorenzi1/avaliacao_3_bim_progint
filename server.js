@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 
-app.use("/api/dados", router);
+app.use("/api", router);
 
 
 app.get("/", (req, res) => {
